@@ -3,9 +3,6 @@
    <remote name="andrekakap26"
 	    fetch="https://github.com/andrekakap26"
 	    clone-depth="1" />
-   <remote name="pyrite64"
-	    fetch="https://github.com/pyrite64"
-	    clone-depth="1" />
    <remote name="MillenniumOSS"
 	    fetch="https://github.com/MillenniumOSS"
 	    clone-depth="1" />
@@ -14,7 +11,7 @@
    <project path="device/itel/S666LN" name="device_itel_S666LN" remote="andrekakap26" revision="lineage-23.2" />
 
    <!-- Kernel prebuilt -->
-   <project path="device/itel/S666LN-kernel" name="device_itel_S666LN-kernel" remote="pyrite64" revision="sixteen" />
+   <project path="device/itel/S666LN-kernel" name="device_itel_S666LN-kernel" remote="andrekakap26" revision="sixteen" />
 
    <!-- MCK (generic kernel image) -->
    <project path="device/millennium/common-kernel" name="android_device_millennium_common-kernel" remote="MillenniumOSS" revision="sixteen-qpr2" />

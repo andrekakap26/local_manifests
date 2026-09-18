@@ -46,7 +46,7 @@ Catatan: perangkat A/B virtual dengan dynamic partitions, aman `fastboot flashal
 | Path | Sumber | Revision |
 | ---- | ------ | -------- |
 | `device/itel/S666LN` | andrekakap26/device_itel_S666LN | lineage-23.2 |
-| `device/itel/S666LN-kernel` | pyrite64/device_itel_S666LN-kernel | sixteen |
+| `device/itel/S666LN-kernel` | andrekakap26/device_itel_S666LN-kernel | sixteen |
 | `device/millennium/common-kernel` | MillenniumOSS/android_device_millennium_common-kernel | sixteen-qpr2 |
 | `vendor/itel/S666LN` | andrekakap26/vendor_itel_S666LN | lineage-23.2 |
 | `hardware/mediatek` | MillenniumOSS/android_hardware_mediatek | sixteen |
