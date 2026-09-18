@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+   <remote name="andrekakap26"
+	    fetch="https://github.com/andrekakap26"
+	    clone-depth="1" />
+   <remote name="pyrite64"
+	    fetch="https://github.com/pyrite64"
+	    clone-depth="1" />
+   <remote name="MillenniumOSS"
+	    fetch="https://github.com/MillenniumOSS"
+	    clone-depth="1" />
+
+   <!-- Device -->
+   <project path="device/itel/S666LN" name="device_itel_S666LN" remote="andrekakap26" revision="lineage-23.2" />
+
+   <!-- Kernel prebuilt -->
+   <project path="device/itel/S666LN-kernel" name="device_itel_S666LN-kernel" remote="pyrite64" revision="sixteen" />
+
+   <!-- MCK (generic kernel image) -->
+   <project path="device/millennium/common-kernel" name="android_device_millennium_common-kernel" remote="MillenniumOSS" revision="sixteen-qpr2" />
+
+   <!-- Vendor blobs -->
+   <project path="vendor/itel/S666LN" name="vendor_itel_S666LN" remote="andrekakap26" revision="lineage-23.2" />
+
+   <!-- JamesDSP -->
+   <project path="vendor/JamesDSP" name="android_vendor_JamesDSP" remote="MillenniumOSS" revision="sixteen" />
+
+   <!-- Remove Projects -->
+   <remove-project path="packages/apps/Aperture" />
+
+   <!-- Device support bits -->
+   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="MillenniumOSS" revision="sixteen" />
+   <project path="hardware/millennium" name="android_hardware_millennium" remote="MillenniumOSS" revision="sixteen" />
+   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="sixteen-qpr2-rebase"/>
+   <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="sixteen-oem" />
+   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="MillenniumOSS" revision="lineage-23.2" />
+</manifest>
