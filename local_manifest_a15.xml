@@ -28,8 +28,7 @@
    <!-- Transsion hardware (soong extensions) -->
    <project path="hardware/transsion" name="hardware_transsion" remote="mt6789-transsion" revision="lineage-22" />
 
-   <!-- MediaTek hardware: replace LOS default with A15-compatible fork -->
-   <remove-project path="hardware/mediatek" />
+   <!-- MediaTek hardware (LOS 22.1 manifest does not declare hardware/mediatek) -->
    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dns24" revision="lineage-22.1" />
 
    <!-- MediaTek vendor sepolicy -->
