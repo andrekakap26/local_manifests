@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+   <remote name="andrekakap26"
+	    fetch="https://github.com/andrekakap26"
+	    clone-depth="1" />
+   <remote name="mt6789-transsion"
+	    fetch="https://github.com/mt6789-transsion"
+	    clone-depth="1" />
+   <remote name="dns24"
+	    fetch="https://github.com/dns24"
+	    clone-depth="1" />
+   <remote name="LineageOS"
+	    fetch="https://github.com/LineageOS"
+	    clone-depth="1" />
+   <remote name="userariii"
+	    fetch="https://github.com/userariii"
+	    clone-depth="1" />
+
+   <!-- Device tree (Android 15 / LOS-Extended 22.1 fork) -->
+   <project path="device/itel/S666LN" name="device_itel_S666LN-a15" remote="andrekakap26" revision="los_ext-22.1" />
+
+   <!-- Prebuilt kernel -->
+   <project path="device/itel/S666LN-kernel" name="kernel_itel_S666LN-a15" remote="andrekakap26" revision="lineage-21" />
+
+   <!-- Vendor blobs -->
+   <project path="vendor/itel/S666LN" name="vendor_itel_S666LN-a15" remote="andrekakap26" revision="lineage-21" />
+
+   <!-- Transsion hardware (soong extensions) -->
+   <project path="hardware/transsion" name="hardware_transsion" remote="mt6789-transsion" revision="lineage-22" />
+
+   <!-- MediaTek hardware: replace LOS default with A15-compatible fork -->
+   <remove-project path="hardware/mediatek" />
+   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dns24" revision="lineage-22.1" />
+
+   <!-- MediaTek vendor sepolicy -->
+   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="LineageOS" revision="lineage-22.1" />
+
+   <!-- Moto Dolby -->
+   <project path="vendor/motorola-dolby" name="vendor_motorola-dolby" remote="userariii" revision="v1.2" />
+</manifest>
